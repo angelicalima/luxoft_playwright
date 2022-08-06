@@ -1,0 +1,16 @@
+{
+  "name": "luxsoft_playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pr:run": "npx playwright test",
+    "pr:run:headed": "npx playwright test --headed",
+    "pr:debug": "npx playwright test --debug"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.24.2"
+  }
+}
