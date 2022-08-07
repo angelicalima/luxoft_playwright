@@ -27,7 +27,7 @@ exports.FlightSearchElements = class FlightSearchElements {
   }
 
   async setDepartureDate(departureDate){
-    const date = new Date(`${departureDate}, 2022`);
+    const date = new Date(departureDate);
     const monthShort = date.toLocaleString('en-US', { month: 'short' });
     const day = date.getDate()
     const year = date.getFullYear()
