@@ -1,4 +1,3 @@
-// playwright-dev-page.js
 const { expect } = require('@playwright/test');
 
 exports.FlightSearchElements = class FlightSearchElements {
