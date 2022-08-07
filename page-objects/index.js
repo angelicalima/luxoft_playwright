@@ -1,4 +1,3 @@
-// playwright-dev-page.js
 const { FlightSearchElements } = require('./common/flightSearchElements');
 
 exports.Index = class Index {
