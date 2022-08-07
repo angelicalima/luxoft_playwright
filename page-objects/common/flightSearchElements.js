@@ -38,7 +38,7 @@ exports.FlightSearchElements = class FlightSearchElements {
     await this.page.locator(`[aria-label*='${monthShort} ${day}']`).click();
   }
 
-  async setAdultPassanger(number){
+  async setAdultPassenger(number){
     await this.passengerField.click()
     if(number === 0){
       await this.passengerAdultsField.first().click()

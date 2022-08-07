@@ -11,7 +11,7 @@ test('It should persist the previous data from the index to the new tab', async 
   await indexPage.flightSearchElements.setFrom("New York","John F. Kennedy International Airport")
   await indexPage.flightSearchElements.setTo("Germany","Berlin")
   await indexPage.flightSearchElements.setDepartureDate("Tue, August 30")
-  await indexPage.flightSearchElements.setAdultPassanger(2)
+  await indexPage.flightSearchElements.setAdultPassenger(2)
   await indexPage.flightSearchElements.searchFlightsBtn.click()
 
   //handling the new page
