@@ -20,9 +20,9 @@ test('It should persist the previous data from the index to the new tab', async 
   ])
   await newPage.waitForLoadState();
   const searchPage = new Search(newPage)
-
-  await expect(searchPage.flightSearchElements.nightThemeSwitch).toBeChecked()
+  
   await expect(searchPage.page.url()).toContain("/search")
+  await expect(searchPage.flightSearchElements.nightThemeSwitch).toBeChecked()
   await expect(searchPage.flightSearchElements.fromField).toHaveValue("New York")
   await expect(searchPage.flightSearchElements.toField).toHaveValue("Berlin")
   await expect(searchPage.flightSearchElements.departureDateInput).toHaveValue("Tue, August 30")
