@@ -5,7 +5,7 @@ exports.FlightSearchElements = class FlightSearchElements {
 
   constructor(page) {
     this.page = page;
-    this.nightThemeSwitch = page.locator('[data-test-id="switch"] span') 
+    this.nightThemeSwitch = page.locator('[data-test-id="switch"] span').first() 
     this.fromField = page.locator('[data-test-id="origin-autocomplete-field"]') 
     this.toField = page.locator('[data-test-id="destination-autocomplete-field"]')
     this.searchFlightsBtn = page.locator('[data-test-id="form-submit"]')
@@ -47,9 +47,4 @@ exports.FlightSearchElements = class FlightSearchElements {
       await this.passengerAdultsField.nth(1).click()
     }
   }
-
-  async switchNightThemeOn(){
-      await this.nightThemeSwitch.nth(1).click();
-  }
-
 }
